@@ -34,8 +34,8 @@ def listar_empresas():
 
     return jsonify(dados)
 
-@app.route("/lancamentos_empresa", methods=["GET"])
-def lancamentos_empresa():
+@app.route("/lancamentos_empresas", methods=["GET"])
+def lancamentos_empresas():
     query = "select apelidopg, valor from lctos2"
     df = pd.read_sql(query, engine)
 
